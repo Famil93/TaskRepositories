@@ -143,28 +143,28 @@ public class Main {
 //        }
 //        System.out.println(ikinciEded);
 
-//        int temp=0;
-//        int[] arr = {1, 2, 3, 1};
-//
-//        int[] unique = arr;
-//        boolean bool=true; ;
-//        for (int i = 0; i < arr.length; i++) {
-//
-//            for (int j = 0; j < arr.length; j++) {
-//
-//                if(bool==false){
-//                    continue;
-//                }
-//                bool=true;
-//                if (arr[i] == unique[j]) {
-//                   bool=false;
-//
-//
-//                }
-//                System.out.println(unique[j]);
-//            }
-//
-//    }
+        int temp=0;
+        int[] arr = {1, 2, 3, 1};
+
+        int[] unique = arr;
+        boolean bool=true; ;
+        for (int i = 0; i < arr.length; i++) {
+
+            for (int j = 0; j < arr.length; j++) {
+
+                if(bool==false){
+                    continue;
+                }
+                bool=true;
+                if (arr[i] == unique[j]) {
+                   bool=false;
+
+
+                }
+                System.out.println(unique[j]);
+            }
+
+    }
 
 
     }
