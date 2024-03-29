@@ -49,6 +49,7 @@ public class GeneralTasks {
 //        Task3 Verilen arrayin elementlerinin sorted (kicikden boyuye dogru)olub olmadigini cap edin
 
 
+
         int[] arr={1,1,2,4};
 boolean bool= true;
         int[] correction=arr;
