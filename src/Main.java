@@ -10,34 +10,34 @@ public class Main {
 //            }
 //        }
 //Task2
-        int mod = 0;
-        int n = 0;
-        int tekEdedler = 0;
-        int count = 0;
-        int sum = 0;
-
-        int[] numbers = {23, 12, 31, 151};
-
-        for (int i = 0; i < numbers.length; i++) {
-
-
-            n = numbers[i];
-
-            while (n > 0) {
-                mod = n % 10;
-                n = n / 10;
-                sum += mod;
-
-
-            }
-            if (!(sum % 2 == 0)) {
-                tekEdedler += sum;
-                count++;
-            }
-            sum = 0;
-        }
-
-        System.out.println(tekEdedler / count);
+//        int mod = 0;
+//        int n = 0;
+//        int tekEdedler = 0;
+//        int count = 0;
+//        int sum = 0;
+//
+//        int[] numbers = {23, 12, 31, 151};
+//
+//        for (int i = 0; i < numbers.length; i++) {
+//
+//
+//            n = numbers[i];
+//
+//            while (n > 0) {
+//                mod = n % 10;
+//                n = n / 10;
+//                sum += mod;
+//
+//
+//            }
+//            if (!(sum % 2 == 0)) {
+//                tekEdedler += sum;
+//                count++;
+//            }
+//            sum = 0;
+//        }
+//
+//        System.out.println(tekEdedler / count);
 
 
 //Task3
@@ -105,26 +105,25 @@ public class Main {
 //        Task3 Verilen arrayin elementlerinin sorted (kicikden boyuye dogru)olub olmadigini cap edin
 
 
-//        int[] arr={1,3,2,4};
-//        int min =0;
-//        int[] correction=new int[arr.length];
+//        int[] arr={3,2,3,4};
+//boolean bool= true;
+//        int[] correction=arr;
+//        int correction1=0;
+//        for(int i=arr.length-1;i>0;i--){
 //
-//        for(int i=0;i<arr.length;i++){
-//            for(int j=0;j<arr.length;j++){
+//                if(correction[i-1]>=correction[i]){
+//                    bool=false;
 //
-//                if(min<arr[i]){
-//                    min = arr.length;
-//                    correction[j]=min;
+//
 //                }
-//                System.out.println(correction[j]);
-//
 //
 //
 //            }
-//
-//
+//        if(bool==false){
+//            System.out.println("unsorted");
+//        }else{
+//            System.out.println("sorted");
 //        }
-
 
 
 //        AzizTask1
@@ -144,22 +143,30 @@ public class Main {
 //        }
 //        System.out.println(ikinciEded);
 
-
-
-
-//        int[] arr = {1,1,2,3};
+//        int temp=0;
+//        int[] arr = {1, 2, 3, 1};
 //
-//        int[] unique =arr;
+//        int[] unique = arr;
+//        boolean bool=true; ;
+//        for (int i = 0; i < arr.length; i++) {
 //
-//        for(int i=0;i<arr.length;i++){
-//            for(int j=arr.length-1;j>0;j--){
-//                if(unique[j]==arr[i]){
-//                    break;
+//            for (int j = 0; j < arr.length; j++) {
+//
+//                if(bool==false){
+//                    continue;
+//                }
+//                bool=true;
+//                if (arr[i] == unique[j]) {
+//                   bool=false;
+//
 //
 //                }
 //                System.out.println(unique[j]);
 //            }
-//        }
+//
+//    }
+
+
     }
 }
 
