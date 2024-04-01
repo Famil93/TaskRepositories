@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         //Task1
@@ -143,31 +145,56 @@ public class Main {
 //        }
 //        System.out.println(ikinciEded);
 
-        int temp=0;
-        int[] arr = {1, 2, 3, 1};
+//        int temp=0;
+//        int[] arr = {1, 2, 3, 1};
+//
+//        int[] unique = arr;
+//        boolean bool=true; ;
+//        for (int i = 0; i < arr.length; i++) {
+//
+//            for (int j = 0; j < arr.length; j++) {
+//
+//                if(bool==false){
+//                    continue;
+//                }
+//                bool=true;
+//                if (arr[i] == unique[j]) {
+//                   bool=false;
+//
+//
+//                }
+//                System.out.println(unique[j]);
+//            }
+//
+//    }
 
-        int[] unique = arr;
-        boolean bool=true; ;
-        for (int i = 0; i < arr.length; i++) {
+        int[] array = {15, 250, 23, 457, 321, 875, 246, 190, 234, 800, 9837, 12531};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("input daxil edin");
+        int input = sc.nextInt();
+        int input2 = sc.nextInt();
+        int result = 0;
+        int lastNumber = 0;
 
-            for (int j = 0; j < arr.length; j++) {
+        int temp = 0;
 
-                if(bool==false){
-                    continue;
+        for (int i = 0; i < array.length; i++) {
+
+            result = array[i];
+
+            if (result > input && result < input2) {
+                while (result > 0) {
+                    lastNumber = result % 10;
+                    result = result / 10;
+                    temp += lastNumber;
                 }
-                bool=true;
-                if (arr[i] == unique[j]) {
-                   bool=false;
-
-
-                }
-                System.out.println(unique[j]);
             }
-
-    }
-
+            if (temp > 7) {
+                System.out.println(array[i]);
+            }
+            temp = 0;
+        }
 
     }
 }
-
 

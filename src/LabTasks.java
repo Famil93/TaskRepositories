@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class LabTasks {
     public static void main(String[] args) {
 //     Task1
@@ -43,7 +45,32 @@ public class LabTasks {
 //            count = 0;
 //        }
 
+        int[] array = {15, 250, 23, 457, 321, 875, 246, 190, 234, 800, 9837, 12531};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("input daxil edin");
+        int input = sc.nextInt();
+        int input2 = sc.nextInt();
+        int result = 0;
+        int lastNumber = 0;
 
+        int temp = 0;
+
+        for (int i = 0; i < array.length; i++) {
+
+            result = array[i];
+
+            if (result > input && result < input2) {
+                while (result > 0) {
+                    lastNumber = result % 10;
+                    result = result / 10;
+                    temp += lastNumber;
+                }
+            }
+            if (temp > 7) {
+                System.out.println(array[i]);
+            }
+            temp = 0;
+        }
     }
 }
 
