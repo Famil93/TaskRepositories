@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class GeneralTasks {
     public static void main(String[] args) {
 //        Task  1
@@ -50,24 +52,46 @@ public class GeneralTasks {
 
 
 
-        int[] arr={1,1,2,4};
-boolean bool= true;
-        int[] correction=arr;
-        int correction1=0;
-        for(int i=arr.length-1;i>0;i--){
+//        int[] arr={1,1,2,4};
+//boolean bool= true;
+//        int[] correction=arr;
+//        int correction1=0;
+//        for(int i=arr.length-1;i>0;i--){
+//
+//                if(correction[i-1]>=correction[i]){
+//                    bool=false;
+//
+//
+//                }
+//
+//
+//            }
+//        if(bool==false){
+//            System.out.println("unsorted");
+//        }else{
+//            System.out.println("sorted");
+//        }
 
-                if(correction[i-1]>=correction[i]){
-                    bool=false;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Istifadecinin  adini daxil edin");
+        String ad = sc.nextLine();
+        System.out.println("bali daxil edin");
+        int bal = sc.nextInt();
 
-
-                }
-
-
-            }
-        if(bool==false){
-            System.out.println("unsorted");
+        if(bal>=0&&bal<=50){
+            System.out.println(ad + ":"+"aldigi qiymet : F");
+        }else if(bal>=51&&bal<=60){
+            System.out.println(ad + ":"+"aldigi qiymet :  E");
+        }else if(bal>=61 &&bal<=70){
+            System.out.println(ad + ":"+"aldigi qiymet :  D");
+        }else if(bal>=71&&bal<=80){
+            System.out.println(ad + ":"+"aldigi qiymet :  C");
+        }else if(bal>=81&&bal<=90){
+            System.out.println(ad + ":"+"aldigi qiymet :  B");
+        } else if (bal>=91&& bal <=100) {
+            System.out.println(ad +" "+"aldigi qiymet :  A");
         }else{
-            System.out.println("sorted");
+            System.out.println("Systemde  nasazliq var");
         }
     }
 }
