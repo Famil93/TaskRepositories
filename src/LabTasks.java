@@ -123,6 +123,17 @@ public class LabTasks {
 //            }
 //
 //        }
+int[] arr = {25,15,65,9,32,157,854};
+
+        int[] arrCopy=new int[arr.length];
+
+        for(int i=0;i<arr.length;i++){
+            arrCopy[i]=arr[i];
+
+        }
+        for (int copy :arrCopy) {
+            System.out.println(copy);
+        }
 
         int[] arr = {25,15, 65, 897, 25, 65, 124};
         int count = 0;
