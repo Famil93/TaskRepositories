@@ -94,33 +94,62 @@ public class LabTasks {
 //            System.out.println("Systemde  nasazliq var");
 //        }
 
-        System.out.println(" reqemleri  daxil edin");
-        int numb = sc.nextInt();
+//        System.out.println(" reqemleri  daxil edin");
+//        int numb = sc.nextInt();
+//        int count = 0;
+//        int lastnumber = 0;
+//        int temp = 0;
+//
+//
+//        temp = numb;
+//        while (temp > 0) {
+//            lastnumber = temp % 10;
+//
+//            temp = temp / 10;
+//            count++;
+//        }
+//        lastnumber=0;
+//        if(count<4){
+//            return;
+//        }
+//
+//        int[] arr = new int[count];
+//        for (int i = 0; i < arr.length; i++) {
+//            while (numb > 0) {
+//                lastnumber = numb % 10;
+//                arr[i] = lastnumber;
+//                numb = numb / 10;
+//                System.out.print(arr[i]);
+//            }
+//
+//        }
+
+        int[] arr = {25,15, 65, 897, 25, 65, 124};
         int count = 0;
-        int lastnumber = 0;
-        int temp = 0;
+        int count1=0;
+        int newArrayElement = 0;
 
-
-        temp = numb;
-        while (temp > 0) {
-            lastnumber = temp % 10;
-
-            temp = temp / 10;
-            count++;
-        }
-        lastnumber=0;
-        if(count<4){
-            return;
-        }
-
-        int[] arr = new int[count];
         for (int i = 0; i < arr.length; i++) {
-            while (numb > 0) {
-                lastnumber = numb % 10;
-                arr[i] = lastnumber;
-                numb = numb / 10;
-                System.out.print(arr[i]);
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                }
+
             }
+            if (count < 2) {
+
+                count1++;
+                int[] array1= new int[count1];
+                for(int a=0;a<array1.length;a++){
+                       array1[a]=arr[i];
+                    System.out.println(array1[a]);
+                }
+
+            }
+
+
+            count=0;
+            count1=0;
 
         }
     }
