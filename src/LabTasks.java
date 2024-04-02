@@ -73,28 +73,58 @@ public class LabTasks {
 //        }
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Istifadecinin  adini daxil edin");
-        String ad = sc.nextLine();
-        System.out.println("bali daxil edin");
-        int bal = sc.nextInt();
+//        System.out.println("Istifadecinin  adini daxil edin");
+//        String ad = sc.nextLine();
+//        System.out.println("bali daxil edin");
+//        int bal = sc.nextInt();
+//
+//      if(bal>=0&&bal<=50){
+//            System.out.println(ad + ":"+"aldigi qiymet : F");
+//        }else if(bal>=51&&bal<=60){
+//            System.out.println(ad + ":"+"aldigi qiymet :  E");
+//        }else if(bal>=61 &&bal<=70){
+//            System.out.println(ad + ":"+"aldigi qiymet :  D");
+//        }else if(bal>=71&&bal<=80){
+//            System.out.println(ad + ":"+"aldigi qiymet :  C");
+//        }else if(bal>=81&&bal<=90){
+//            System.out.println(ad + ":"+"aldigi qiymet :  B");
+//        } else if (bal>=91&& bal <=100) {
+//            System.out.println(ad +" "+"aldigi qiymet :  A");
+//        }else{
+//            System.out.println("Systemde  nasazliq var");
+//        }
 
-      if(bal>=0&&bal<=50){
-            System.out.println(ad + ":"+"aldigi qiymet : F");
-        }else if(bal>=51&&bal<=60){
-            System.out.println(ad + ":"+"aldigi qiymet :  E");
-        }else if(bal>=61 &&bal<=70){
-            System.out.println(ad + ":"+"aldigi qiymet :  D");
-        }else if(bal>=71&&bal<=80){
-            System.out.println(ad + ":"+"aldigi qiymet :  C");
-        }else if(bal>=81&&bal<=90){
-            System.out.println(ad + ":"+"aldigi qiymet :  B");
-        } else if (bal>=91&& bal <=100) {
-            System.out.println(ad +" "+"aldigi qiymet :  A");
-        }else{
-            System.out.println("Systemde  nasazliq var");
+        System.out.println(" reqemleri  daxil edin");
+        int numb = sc.nextInt();
+        int count = 0;
+        int lastnumber = 0;
+        int temp = 0;
+
+
+        temp = numb;
+        while (temp > 0) {
+            lastnumber = temp % 10;
+
+            temp = temp / 10;
+            count++;
+        }
+        lastnumber=0;
+        if(count<4){
+            return;
         }
 
+        int[] arr = new int[count];
+        for (int i = 0; i < arr.length; i++) {
+            while (numb > 0) {
+                lastnumber = numb % 10;
+                arr[i] = lastnumber;
+                numb = numb / 10;
+                System.out.print(arr[i]);
+            }
+
+        }
     }
 }
+
 
 
