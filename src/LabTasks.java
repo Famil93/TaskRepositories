@@ -169,18 +169,31 @@ public class LabTasks {
 //                System.out.println(array1.length);
 //            }
 //        }
-    //Task 12
-        System.out.println("hansi Ay oldugunu qeyd edin");
-        String month= sc.nextLine();
+        //Task 12
+//        System.out.println("hansi Ay oldugunu qeyd edin");
+//        String month= sc.nextLine();
+//
+//        switch(month){
+//            case "yanvar","mart","May","iyul","avqust","oktyabr","dekabr"  ->System.out.println(31);
+//            case "aprel","iyun","sentyabr","noyabr" -> System.out.println(30);
+//            case "fevral"-> System.out.println("28 or 29");
+//            default -> System.out.println("yeniden daxil edin");
+//        }
 
-        switch(month){
-            case "yanvar","mart","May","iyul","avqust","oktyabr","dekabr"  ->System.out.println(31);
-            case "aprel","iyun","sentyabr","noyabr" -> System.out.println(30);
-            case "fevral"-> System.out.println("28 or 29");
-            default -> System.out.println("yeniden daxil edin");
+        System.out.println("Take number");
+        int number = sc.nextInt();
+
+        while(number<1){
+            System.out.println("Eded 1den balacadir");
+        }
+        switch (number) {
+            case 1, 2, 3, 4, 5 -> System.out.println("1-5 araligindadir");
+            case 6,7,8,9,10 -> System.out.println("5-10 araligindadir");
+            default -> System.out.println("10dan boyukdur");
+
         }
     }
-}
 
+}
 
 
