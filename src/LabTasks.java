@@ -123,45 +123,61 @@ public class LabTasks {
 //            }
 //
 //        }
-int[] arr = {25,15,65,9,32,157,854};
+//int[] arr = {25,15,65,9,32,157,854};
+//
+//        int[] arrCopy=new int[arr.length];
+//
+//        for(int i=0;i<arr.length;i++){
+//            arrCopy[i]=arr[i];
+//
+//        }
+//        for (int copy :arrCopy) {
+//            System.out.println(copy);
+//        }
 
-        int[] arrCopy=new int[arr.length];
+//        int[] arr = {25, 15, 65, 897, 25, 65, 124};
+//        int count = 0;
+//        int count1 = 0;
+//
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr.length; j++) {
+//
+//
+//            }
+//            if (count < 2) {
+//
+//                count1++;
+//
+//            }
+//
+//
+//
+//
+//            count = 0;
+//
+//        }
+//        for (int b=0;b< arr.length;b++){
+//            if (count < 2) {
+//                int[] array1 = new int[count1];
+//                for (int a = 0; a < array1.length; a++) {
+//                    array1[a] = arr[a];
+//                    System.out.println(array1[a]);
+//
+//                }
+//
+//                System.out.println(array1.length);
+//            }
+//        }
+    //Task 12
+        System.out.println("hansi Ay oldugunu qeyd edin");
+        String month= sc.nextLine();
 
-        for(int i=0;i<arr.length;i++){
-            arrCopy[i]=arr[i];
-
-        }
-        for (int copy :arrCopy) {
-            System.out.println(copy);
-        }
-
-        int[] arr = {25,15, 65, 897, 25, 65, 124};
-        int count = 0;
-        int count1=0;
-        int newArrayElement = 0;
-
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                if (arr[i] == arr[j]) {
-                    count++;
-                }
-
-            }
-            if (count < 2) {
-
-                count1++;
-                int[] array1= new int[count1];
-                for(int a=0;a<array1.length;a++){
-                       array1[a]=arr[i];
-                    System.out.println(array1[a]);
-                }
-
-            }
-
-
-            count=0;
-            count1=0;
-
+        switch(month){
+            case "yanvar","mart","May","iyul","avqust","oktyabr","dekabr"  ->System.out.println(31);
+            case "aprel","iyun","sentyabr","noyabr" -> System.out.println(30);
+            case "fevral"-> System.out.println("28 or 29");
+            default -> System.out.println("yeniden daxil edin");
         }
     }
 }

@@ -168,32 +168,78 @@ public class Main {
 //
 //    }
 
-        int[] array = {15, 250, 23, 457, 321, 875, 246, 190, 234, 800, 9837, 12531};
+//        int[] array = {15, 250, 23, 457, 321, 875, 246, 190, 234, 800, 9837, 12531};
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("input daxil edin");
+//        int input = sc.nextInt();
+//        int input2 = sc.nextInt();
+//        int result = 0;
+//        int lastNumber = 0;
+//
+//        int temp = 0;
+//
+//        for (int i = 0; i < array.length; i++) {
+//
+//            result = array[i];
+//
+//            if (result > input && result < input2) {
+//                while (result > 0) {
+//                    lastNumber = result % 10;
+//                    result = result / 10;
+//                    temp += lastNumber;
+//                }
+//            }
+//            if (temp > 7) {
+//                System.out.println(array[i]);
+//            }
+//            temp = 0;
+//        }
         Scanner sc = new Scanner(System.in);
-        System.out.println("input daxil edin");
-        int input = sc.nextInt();
-        int input2 = sc.nextInt();
-        int result = 0;
-        int lastNumber = 0;
+//        System.out.println("1ci reqemi daxil edin");
+//        int firstNumb=sc.nextInt();
+//        System.out.println("2ci reqemi daxil edin");
+//        int secondNumb= sc.nextInt();
+//        System.out.println("emeliyyati daxil edin");
+//        sc.nextLine();
+//        String operation= sc.nextLine();
 
-        int temp = 0;
+//        switch(operation){
+//            case "*":
+//                System.out.println(firstNumb*secondNumb);
+//                break;
+//            case "/":
+//                System.out.println(firstNumb/secondNumb);
+//                break;
+//            case "+":
+//                System.out.println(firstNumb+secondNumb);
+//                break;
+//            case "-":
+//                System.out.println(firstNumb-secondNumb);
+//                break;
+//            default:
+//                System.out.println("Error");
+//        }
 
-        for (int i = 0; i < array.length; i++) {
+//        System.out.println("Ayin necenci ay oldugun daxil edin");
+//        int fesil=sc.nextInt();
+//        switch(fesil) {
+//            case 12,1,2 -> System.out.println("Qish");
+//            case 3,4,5 -> System.out.println("Yaz");
+//            case 6,7,8 -> System.out.println("Yay");
+//            case 9,10,11 -> System.out.println("Payiz");
+//            default -> System.out.println("Error");
+//        }
 
-            result = array[i];
+        System.out.println("hansi Ay oldugunu qeyd edin");
+        String month= sc.nextLine();
 
-            if (result > input && result < input2) {
-                while (result > 0) {
-                    lastNumber = result % 10;
-                    result = result / 10;
-                    temp += lastNumber;
-                }
-            }
-            if (temp > 7) {
-                System.out.println(array[i]);
-            }
-            temp = 0;
+        switch(month){
+            case "yanvar","mart","May","iyul","avqust","oktyabr","dekabr"  ->System.out.println(31);
+            case "aprel","iyun","sentyabr","noyabr" -> System.out.println(30);
+            case "fevral"-> System.out.println("28 or 29");
+            default -> System.out.println("yeniden daxil edin");
         }
+
 
     }
 }
