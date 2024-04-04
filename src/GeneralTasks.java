@@ -72,26 +72,77 @@ public class GeneralTasks {
 //            System.out.println("sorted");
 //        }
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Istifadecinin  adini daxil edin");
-        String ad = sc.nextLine();
-        System.out.println("bali daxil edin");
-        int bal = sc.nextInt();
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Istifadecinin  adini daxil edin");
+//        String ad = sc.nextLine();
+//        System.out.println("bali daxil edin");
+//        int bal = sc.nextInt();
+//
+//        if(bal>=0&&bal<=50){
+//            System.out.println(ad + ":"+"aldigi qiymet : F");
+//        }else if(bal>=51&&bal<=60){
+//            System.out.println(ad + ":"+"aldigi qiymet :  E");
+//        }else if(bal>=61 &&bal<=70){
+//            System.out.println(ad + ":"+"aldigi qiymet :  D");
+//        }else if(bal>=71&&bal<=80){
+//            System.out.println(ad + ":"+"aldigi qiymet :  C");
+//        }else if(bal>=81&&bal<=90){
+//            System.out.println(ad + ":"+"aldigi qiymet :  B");
+//        } else if (bal>=91&& bal <=100) {
+//            System.out.println(ad +" "+"aldigi qiymet :  A");
+//        }else{
+//            System.out.println("Systemde  nasazliq var");
+//        }
 
-        if(bal>=0&&bal<=50){
-            System.out.println(ad + ":"+"aldigi qiymet : F");
-        }else if(bal>=51&&bal<=60){
-            System.out.println(ad + ":"+"aldigi qiymet :  E");
-        }else if(bal>=61 &&bal<=70){
-            System.out.println(ad + ":"+"aldigi qiymet :  D");
-        }else if(bal>=71&&bal<=80){
-            System.out.println(ad + ":"+"aldigi qiymet :  C");
-        }else if(bal>=81&&bal<=90){
-            System.out.println(ad + ":"+"aldigi qiymet :  B");
-        } else if (bal>=91&& bal <=100) {
-            System.out.println(ad +" "+"aldigi qiymet :  A");
-        }else{
-            System.out.println("Systemde  nasazliq var");
+//        Task 1 04.04.2024
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Rengi daxil edin");
+//        String light = sc.nextLine();
+//
+//        switch (light){
+//            case "Yashil"-> System.out.println("Hereket edin");
+//            case "Qirmizi"-> System.out.println("Dayanin");
+//            case "Sari" -> System.out.println("Hazirlashin");
+//            default -> System.out.println("Sehv reng daxil edillib,yeniden daxil etmeye cehd edin");
+//        }
+// Task 2 04.04.2024
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Valyutani daxil edin");
+        String valyuta = sc.nextLine();
+        System.out.println("Heddef valyutani daxil edin");
+        String hedefValyuta = sc.nextLine();
+        System.out.println("Deyeri daxil edin");
+        int deyer = sc.nextInt();
+
+
+
+
+        switch (valyuta) {
+            case "Usd":{
+                switch (hedefValyuta){
+                    case "Azn" -> System.out.println(deyer*1.70 + ": azn");
+                    case "Euro" -> System.out.println(deyer*0.92 + "euro");
+                    default -> System.out.println("duzgun daxil edilmeyib");
+                }
+
+            }
+            break;
+            case "Azn":{
+                switch (hedefValyuta){
+                    case "Usd" -> System.out.println(deyer*0.59);
+                    case "Euro" -> System.out.println(deyer*0.54);
+                    default -> System.out.println("duzgun daxil edilmeyib");
+                }
+
+            }
+            break;
+            case "Euro" : {
+                switch (hedefValyuta){
+                    case "Usd" -> System.out.println(deyer *1.09);
+                    case "Azn" -> System.out.println(deyer*1.85);
+                    default -> System.out.println("duzgun daxil edilmeyib");
+                }
+            }
         }
     }
 }

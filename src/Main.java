@@ -194,7 +194,7 @@ public class Main {
 //            }
 //            temp = 0;
 //        }
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 //        System.out.println("1ci reqemi daxil edin");
 //        int firstNumb=sc.nextInt();
 //        System.out.println("2ci reqemi daxil edin");
@@ -230,16 +230,66 @@ public class Main {
 //            default -> System.out.println("Error");
 //        }
 
-        System.out.println("hansi Ay oldugunu qeyd edin");
-        String month= sc.nextLine();
+//        System.out.println("hansi Ay oldugunu qeyd edin");
+//        String month= sc.nextLine();
+//
+//        switch(month){
+//            case "yanvar","mart","May","iyul","avqust","oktyabr","dekabr"  ->System.out.println(31);
+//            case "aprel","iyun","sentyabr","noyabr" -> System.out.println(30);
+//            case "fevral"-> System.out.println("28 or 29");
+//            default -> System.out.println("yeniden daxil edin");
+//        }
+//  Task 1
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Rengi daxil edin");
+//        String light = sc.nextLine();
+//
+//        switch (light){
+//            case "Yashil"-> System.out.println("Hereket edin");
+//            case "Qirmizi"-> System.out.println("Dayanin");
+//            case "Sari" -> System.out.println("Hazirlashin");
+//            default -> System.out.println("Sehv reng daxil edillib,yeniden daxil etmeye cehd edin");
+//        }
+        //Task 2
 
-        switch(month){
-            case "yanvar","mart","May","iyul","avqust","oktyabr","dekabr"  ->System.out.println(31);
-            case "aprel","iyun","sentyabr","noyabr" -> System.out.println(30);
-            case "fevral"-> System.out.println("28 or 29");
-            default -> System.out.println("yeniden daxil edin");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Valyutani daxil edin");
+        String valyuta = sc.nextLine();
+        System.out.println("Heddef valyutani daxil edin");
+        String hedefValyuta = sc.nextLine();
+        System.out.println("Deyeri daxil edin");
+        int deyer = sc.nextInt();
+
+
+
+
+        switch (valyuta) {
+            case "Usd":{
+                switch (hedefValyuta){
+                    case "Azn" -> System.out.println(deyer*1.70 + ": azn");
+                    case "Euro" -> System.out.println(deyer*0.92 + "euro");
+                    default -> System.out.println("duzgun daxil edilmeyib");
+                }
+
+            }
+            break;
+            case "Azn":{
+                    switch (hedefValyuta){
+                        case "Usd" -> System.out.println(deyer*0.59);
+                        case "Euro" -> System.out.println(deyer*0.54);
+                        default -> System.out.println("duzgun daxil edilmeyib");
+                    }
+
+            }
+            break;
+            case "Euro" : {
+                switch (hedefValyuta){
+                    case "Usd" -> System.out.println(deyer *1.09);
+                    case "Azn" -> System.out.println(deyer*1.85);
+                    default -> System.out.println("duzgun daxil edilmeyib");
+                }
+            }
         }
-
 
     }
 }

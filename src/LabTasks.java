@@ -180,18 +180,20 @@ public class LabTasks {
 //            default -> System.out.println("yeniden daxil edin");
 //        }
 
-        System.out.println("Take number");
-        int number = sc.nextInt();
+//        System.out.println("Take number");
+//        int number = sc.nextInt();
+//
+//        while(number<1){
+//            System.out.println("Eded 1den balacadir");
+//        }
+//        switch (number) {
+//            case 1, 2, 3, 4, 5 -> System.out.println("1-5 araligindadir");
+//            case 6,7,8,9,10 -> System.out.println("5-10 araligindadir");
+//            default -> System.out.println("10dan boyukdur");
+//
+//        }
 
-        while(number<1){
-            System.out.println("Eded 1den balacadir");
-        }
-        switch (number) {
-            case 1, 2, 3, 4, 5 -> System.out.println("1-5 araligindadir");
-            case 6,7,8,9,10 -> System.out.println("5-10 araligindadir");
-            default -> System.out.println("10dan boyukdur");
 
-        }
     }
 
 }
